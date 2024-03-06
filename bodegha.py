@@ -200,7 +200,7 @@ def process_comments(repository, accounts, date, min_comments, max_comments, api
         # for this script stays below GitHub's limit. For more details, see the following documentation:
         # https://docs.github.com/en/graphql/overview/resource-limitations
         # Wait for one hour if the number of queries is close to the limit, to make sure that the score gets reset.
-        if queryCounter > 100:
+        if queryCounter > 500:
             queryCounter = 0
             tqdm.write("Wait for one hour, to prevent exceeding the rate limit of GitHub...")
             time.sleep(3700)
