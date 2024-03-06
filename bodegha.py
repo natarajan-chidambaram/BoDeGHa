@@ -213,7 +213,7 @@ def process_comments(repository, accounts, date, min_comments, max_comments, api
             # an HTTP 502 error is raised. If so, wait an hour to make sure that the score is properly
             # reset in order to continue.
             if err.code == 502:
-                tqdm.write("Wait for one hour, to prevent exceeding the rate limit of GitHub...")
+                tqdm.write("GitHub Rate limit execeeded. Wait for one hour...")
                 time.sleep(3700)
                 tqdm.write("Continue downloading...")
                 data = download_comments(repository, apikey, pr, issue, beforePr, beforeIssue)
