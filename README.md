@@ -42,7 +42,7 @@ If you want to consult or cite the ground-truth dataset, please refer to the fol
 ## Installation
 To install BoDeGHa, run the following command:
 ```
-pip install git+https://github.com/mehdigolzadeh/BoDeGHa
+pip install git+https://github.com/natarajan-chidambaram/BoDeGHa
 ```
 Given that this tool has many dependencies, and in order not to conflict with already installed packages, it is recommended to use a virtual environment before its installation. You can install and create a _Python virtual environment_ and then install and run the tool in this environment. You can use any virtual environment of your choice. Below are the steps to install and create a virtual environment with **virtualenv**.
 
